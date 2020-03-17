@@ -1,0 +1,11 @@
+Development Tool
+	Visual Studio 2017
+	cmake-3.13.3
+Windows: 
+	Win7	
+Linux:CentOS Linux release 7.6.1810 (Core)
+	GCC 8.2
+Mysql 5.6
+Protobuf 3.4.0
+Lua 5.3.0
+Sqlite 3.27.2

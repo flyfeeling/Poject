@@ -1,0 +1,59 @@
+syntax = "proto3";
+enum BattleType
+{
+	T_Battle_None				= 0;
+	T_Battle_Robot 				= 1;
+}
+
+
+message ClientLoginGsReq
+{
+	uint32 accountId = 1;
+}
+
+message ClientLoginGsAck
+{
+	int32 retCode = 1;	
+}
+
+message CreateRoomReq
+{
+	int32 mapid = 1;
+}
+
+message CreateRoomAck
+{
+	int32 retCode = 1;	
+	uint32 roomid = 2;
+}
+
+message ReadyToBattleReq
+{
+	int32 battleType = 1;
+	int32 robotCount = 2;
+}
+
+message ReadyToBattleAck
+{
+	int32 retCode =1;
+	repeated uint32 roleid = 2;
+}
+
+message Position
+{
+	float x = 1;
+	float y = 2;
+	float z = 3; 
+}
+
+message FindPathReq
+{
+	Position spos = 1;
+	Position epos = 2;
+}
+
+message FindPathAck
+{
+ 	int32 retCode = 1;
+	repeated Position paths = 2;
+}

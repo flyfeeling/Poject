@@ -1,0 +1,2 @@
+H:\WorkSpace\GameProject\Client\TestCSharp\TestCSharp\obj\Debug\TestCSharp.csprojAssemblyReference.cache
+H:\WorkSpace\GameProject\Client\TestCSharp\TestCSharp\obj\Debug\TestCSharp.csproj.GenerateResource.cache

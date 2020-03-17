@@ -1,0 +1,132 @@
+syntax = "proto3";
+
+message RoleItem 
+{
+	uint64	RoleID	= 1;
+	string	Name	= 2;
+	int32	Carrer	= 3;
+	int32	Level	= 4;
+}
+
+message RoleListReq 
+{
+	uint64	AccountID	= 1;
+	int32	LoginCode	= 2;
+}
+
+message RoleListAck 
+{
+	uint32	RetCode = 1;
+	repeated  RoleItem RoleList = 2;
+}
+
+message RoleCreateReq 
+{
+	uint64	AccountID	= 1;
+	string	Name		= 2;
+	int32	Carrer		= 3;
+	int32	Channel		= 4;
+}
+
+message RoleCreateAck 
+{
+	uint32	RetCode		= 1;
+	uint64	AccountID	= 2;
+	uint64	RoleID		= 3;
+	string	Name		= 4;
+	int32	Carrer		= 5;
+}
+
+message RoleDeleteReq
+{
+	uint64	AccountID	= 1;
+	uint64	RoleID		= 2;
+}
+
+message RoleDeleteAck 
+{
+	uint32	RetCode = 1;
+}
+
+message RoleLoginReq 
+{
+	uint64	AccountID	= 1;
+	uint64	RoleID		= 2;
+	int32	LoginCode	= 3;
+}
+
+message RoleLogoutReq 
+{
+	uint64	AccountID = 1;
+}
+
+message RoleLogoutAck 
+{
+	uint32	RetCode = 1;
+}
+
+message RoleDisconnectReq 
+{
+	uint64	AccountID	= 1;
+	uint64	RoleID		= 2;
+	int32	LoginCode	= 3;
+}
+
+message RoleDisconnectAck 
+{
+	uint32	RetCode = 1;
+}
+
+message RoleReconnectReq 
+{
+	uint64	RoleID = 1;
+}
+
+message RoleReconnectAck 
+{
+	uint32	RetCode = 1;
+}
+
+message BroadMessageNotify {
+	uint32		MsgID			= 1;
+	repeated	uint32 ConnID	= 2;
+    bytes		MsgData			= 3;	
+}
+
+
+message ChatMessageReq 
+{
+	string	SrcName		= 1;
+	uint64	SrcID		= 2;
+	int32	Channel		= 3;
+	uint64	GuildID		= 4;
+	string	Content		= 5;
+}
+
+message ChatMessageAck 
+{
+	uint32	RetCode = 1;
+}
+
+message ChatMessageNty 
+{
+	string	SrcName		= 1;
+	uint64	SrcID		= 2;
+	int32	Channel		= 3;
+	uint64	GuildID		= 4;
+	string	Content		= 5;
+}
+
+message RoleLoginAck 
+{
+	uint32   RetCode			= 1;
+	uint64   AccountID			= 2;
+	uint64   RoleID				= 3;
+	int32    Carrer				= 4;
+	int32    Level				= 5;
+	int64    Exp				= 6;
+	string   Name				= 7;
+	int32    VipLvl				= 8;
+	int32    VipExp				= 9;
+	int64    FightValue			= 10;
+}

@@ -1,0 +1,99 @@
+﻿syntax = "proto3";
+enum MessageID {
+
+	MSG_BEGIN						= 0;
+	//============================================================================================
+	// 				登陆服消息定义
+	//============================================================================================
+	MSG_LOGIN_BEGIN												= 10001;
+	MSG_CHECK_VERSION_REQ										= 10002;    //版本验证
+	MSG_CHECK_VERSION_ACK										= 10003;    //版本验证返回
+	MSG_SERVER_LIST_REQ											= 10004;	//服务器列表请求
+	MSG_SERVER_LIST_ACK											= 10005;    //服务器列表的返回
+	MSG_SELECT_SERVER_REQ										= 10006;	//选择服务器请求
+	MSG_SELECT_SERVER_ACK										= 10007;	//选择服务器请求返回
+	MSG_LOGIC_REGTO_LOGIN_REQ									= 10008;	//注册服务器请求
+	MSG_LOGIC_REGTO_LOGIN_ACK									= 10009;	//注册服务器请求返回
+	MSG_LOGIN_END												= 12000;
+	//============================================================================================
+	// 				账号服消息定义
+	//============================================================================================
+	MSG_ACCOUNT_BEGIN											= 12001;
+	MSG_ACCOUNT_REG_REQ											= 12002;    //注册账号
+	MSG_ACCOUNT_REG_ACK											= 12003;    //注册账号返回
+	MSG_ACCOUNT_LOGIN_REQ										= 12004;    //账号登录
+	MSG_ACCOUNT_LOGIN_ACK										= 12005;    //账号登录返回
+	MSG_SEAL_ACCOUNT_REQ										= 12006;    //封号请求
+	MSG_SEAL_ACCOUNT_ACK										= 12007;    //封号请求返回
+	MSG_ACCOUNT_END												= 13000;
+	//============================================================================================
+	// 				逻辑服消息定义 13001~15000
+	//============================================================================================
+	MSG_LOGIC_BEGIN												= 13001;
+	MSG_ROLE_CREATE_REQ											= 13002;   //登录请法度
+	MSG_ROLE_CREATE_ACK											= 13003;   //登录成功  返回基本模块的数据, 包括基本类的数据
+	MSG_ROLE_DELETE_REQ											= 13004;   //登录请法度
+	MSG_ROLE_DELETE_ACK											= 13005;   //登录成功  返回基本模块的数据, 包括基本类的数据
+	MSG_ROLE_LOGIN_REQ											= 13006;   //登录请法度
+	MSG_ROLE_LOGIN_ACK											= 13007;   //登录成功  返回基本模块的数据, 包括基本类的数据
+	MSG_ROLE_LOGOUT_REQ											= 13008;   //登录请法度
+	MSG_ROLE_LOGOUT_ACK											= 13009;   //登录成功  返回基本模块的数据, 包括基本类的数据
+	MSG_ROLE_LIST_REQ											= 13010;
+	MSG_ROLE_LIST_ACK											= 13011;
+	MSG_ROLE_RECONNECT_REQ										= 13012;   
+	MSG_ROLE_RECONNECT_ACK										= 13013;   
+	MSG_BROAD_MESSAGE_NOTIFY									= 13014;
+	MSG_GASVR_REGTO_PROXY_REQ									= 13015;
+	MSG_GASVR_REGTO_PROXY_ACK									= 13016;
+	MSG_ROLE_OTHER_LOGIN_NTY									= 13017;
+	MSG_DISCONNECT_NTY											= 13018;    //断开连接
+				//-------------------聊天相关--------------------//
+	MSG_CHAT_MESSAGE_REQ										= 13501;
+	MSG_CHAT_MESSAGE_ACK										= 13502;
+	MSG_CHAT_MESSAGE_NTY										= 13503;
+	MSG_LOGIC_END												= 15000;
+	//============================================================================================
+	// 				战斗消息定义 20001~23000
+	//============================================================================================
+	MSG_GAME_BEGIN												= 20001;
+				//-------------------服务器内部相关--------------------//
+	MSG_GAME_REGTO_LOGIC_REQ									= 20002;
+	MSG_GAME_REGTO_LOGIC_ACK									= 20003;
+				//-------------------场景相关--------------------//
+	MSG_CREATE_SCENE_REQ										= 20302;
+	MSG_CREATE_SCENE_ACK										= 20303;
+	MSG_DELETE_SCENE_REQ										= 20304;
+	MSG_DELETE_SCENE_ACK										= 20305;
+	MSG_SCENE_DESTROY_REQ										= 20306;
+	MSG_SCENE_DESTROY_ACK										= 20307;
+	MSG_TRANSFER_DATA_REQ										= 20308;
+	MSG_TRANSFER_DATA_ACK										= 20309;
+	MSG_NOTIFY_ROLE_ENTER_REQ									= 20310;
+	MSG_NOTIFY_ROLE_ENTER_ACK									= 20311;
+	MSG_ENTER_SCENE_REQ											= 20312;
+	MSG_ENTER_SCENE_ACK											= 20313; //发送自己的数据
+	MSG_LEAVE_SCENE_REQ											= 20314;
+	MSG_LEAVE_SCENE_ACK											= 20315;
+				//-------------------技能相关--------------------//
+	MSG_CLIENT_LOGIN_GS_REQ										= 20401;
+	MSG_CLIENT_LOGIN_GS_ACK										= 20402;
+	MSG_CREATE_ROOM_REQ											= 20403;
+	MSG_CREATE_ROOM_ACK											= 20404;
+	MSG_FINDPATH_REQ											= 20405;
+	MSG_FINDPATH_ACK											= 20406;
+	MSG_GAME_END												= 25000;
+	//============================================================================================
+	// 				AIServer消息定义
+	//============================================================================================
+	MSG_AI_MSGID_BEGIN											= 25001;
+	MSG_GS_REGISTER_AISVR_REQ									= 23002;
+	MSG_GS_REGISTER_AISVR_ACK									= 23003;
+	MSG_AI_MSGID_END											= 26000;
+
+	
+	////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////
+	MSG_PING = 65530;
+	MSG_END = 65535;
+}
+

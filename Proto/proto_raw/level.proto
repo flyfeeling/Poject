@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package protoMsg;
+
+//StartId=5000
+message MoraleInfo{
+    int32  camp		= 1;
+	int32 buffvalue 	= 2;
+}
+
+message MoraleInfoList{
+    repeated MoraleInfo moraleInfo =1;
+}

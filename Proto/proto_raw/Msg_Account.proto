@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+message AccountLoginReq {
+	string	AccountName	= 1;
+	string	Password	= 2;
+	int32	Channel		= 3;
+	string	ClientVerion= 4;
+	uint32  FromChannel = 5;
+}
+
+message AccountLoginAck {
+	uint32	RetCode		= 1;
+	uint64	AccountID	= 2;
+	int32	LastSvrID	= 3;  //上次登录SvrID
+	string	LastSvrName	= 4;
+}
+
+message SealAccountReq {
+	string	AccountName	= 1;
+	uint64	AccountID	= 2;
+	int32	Channel		= 3;
+	int32	SealTime	= 4;
+	bool	Seal		= 5;
+}
+
+message SealAccountAck {
+	uint32	RetCode		= 1;
+	string	AccountName	= 2;
+	uint64	AccountID	= 3; //账号ID
+}
+
+message AccountRegReq {
+	string	AccountName	= 1;
+	string	Password	= 2;
+	int32	Channel		= 3;
+	string	ClientVerion	= 4;
+}
+
+message AccountRegAck {
+	uint32	RetCode		= 1;
+	uint64	AccountID	= 2; //账号ID
+}

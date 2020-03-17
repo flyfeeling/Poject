@@ -1,0 +1,20 @@
+syntax = "proto3";
+enum EObjectType {
+	OT_NONE   = 0;  //无类别
+	OT_PLAYER = 1;  //玩家
+	OT_ROBOT  = 2;  //机器人
+	OT_MONSTER= 3;  //怪
+	OT_PET    = 4;  //宠物
+	OT_PARTNER= 5;  //伙伴
+	OT_SUMMON = 6;  //招唤物
+}
+
+enum EChatChannel
+{
+	CHL_NONE		= 0; 
+	CHL_WORLD       = 1;//世界聊天
+	CHL_PRIVATE     = 2;//私聊
+	CHL_GUILD		= 3;//公会
+	CHL_GM			= 4;//GM命令
+}
+

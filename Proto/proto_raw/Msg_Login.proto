@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+message CheckVersionReq 
+{
+	string	ClientVerion	= 1;
+	int32	Channel		= 2;
+}
+
+message CheckVersionAck
+ {
+	uint32	RetCode		= 1;
+	string	ClientVerion	= 2;
+}
+
+message ClientServerListReq 
+{
+	uint64	AccountID	= 1;
+	int32	Channel		= 2; //渠道包
+	string	ClientVersion	= 3; //客户端版本号
+}
+
+message ClientServerNode 
+{
+	int32	SvrID		= 1;
+	string	SvrName		= 2;
+	int32	SvrState	= 3;
+	int32	SvrFlag		= 4;
+	int32	SvrOpenTime	= 5;
+}
+
+message ClientServerListAck 
+{
+	uint32	RetCode	= 1;
+	repeated ClientServerNode SvrNode	= 2;
+}
+
+message SelectServerReq 
+{
+	int32	ServerID	= 1;
+}
+
+message SelectServerAck
+ {
+	uint32	RetCode		= 1;
+	int32	ServerID	= 2;
+	string	ServerAddr	= 3;
+	int32	ServerPort	= 4;
+	int32	LoginCode	= 5;
+}
+
+message LogicRegToLoginReq 
+{
+	int32	ServerID	= 1;
+	string	ServerName	= 2;
+	string	ServerIp	= 3;
+	int32	ServerPort	= 4;
+	int32	HttpPort	= 5;
+	int32	WatchPort	= 6;
+}
+
+message LogicRegToLoginAck 
+{
+	uint32	RetCode		= 1;
+	string	NewSvrName	= 2;
+}
