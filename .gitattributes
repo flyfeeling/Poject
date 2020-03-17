@@ -1,0 +1,16 @@
+Server/third_party/Lib/libprotobufd.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/Win32_Interopd.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/Detourd.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/liblua.a filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libsqlite3.a filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/lua.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/Win32_Interop.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/Detour.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/hiredisd.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libmysqlservices.a filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libprotobuf.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/hiredis.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libmysqlclient.a filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/sqlite3.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libmysql.lib filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libprotobuf.a filter=lfs diff=lfs merge=lfs -text
