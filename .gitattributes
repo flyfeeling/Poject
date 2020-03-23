@@ -14,3 +14,4 @@ Server/third_party/Lib/libmysqlclient.a filter=lfs diff=lfs merge=lfs -text
 Server/third_party/Lib/sqlite3.lib filter=lfs diff=lfs merge=lfs -text
 Server/third_party/Lib/libmysql.lib filter=lfs diff=lfs merge=lfs -text
 Server/third_party/Lib/libprotobuf.a filter=lfs diff=lfs merge=lfs -text
+Server/third_party/Lib/libmsql.lib filter=lfs diff=lfs merge=lfs -text
