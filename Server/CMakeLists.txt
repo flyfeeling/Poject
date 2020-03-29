@@ -114,11 +114,8 @@ set(OpenLibs  ${PROJECT_SOURCE_DIR}/third_party/Lib)
 
 # 包含子项目。
 add_subdirectory ("ServerEngine")
-#add_subdirectory("GameEntity")
 add_subdirectory("Message")
 add_subdirectory("UnitTest")
-add_subdirectory ("AIServer")
-#add_subdirectory ("GameServer")
 add_subdirectory ("AccountServer")
 add_subdirectory ("LoginServer")
 #add_subdirectory("DBServer")
