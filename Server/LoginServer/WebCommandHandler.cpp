@@ -31,6 +31,6 @@ BOOL CLoginMsgHandler::OnMsgWebCommandReq(NetPacket* pNetPacket)
 		return TRUE;
 	}
 
-	ServiceBase::GetInstancePtr()->SendMsgRawData(pNetPacket->m_dwConnID, MSG_PHP_GM_COMMAND_ACK, 0, 0, szMsgBuf, pNetPacket->m_pDataBuffer->GetBodyLenth());
+	//ServiceBase::GetInstancePtr()->SendMsgRawData(pNetPacket->m_dwConnID, MSG_PHP_GM_COMMAND_ACK, 0, 0, szMsgBuf, pNetPacket->m_pDataBuffer->GetBodyLenth());
 	return TRUE;
 }
