@@ -1,2 +1,6 @@
 /Server/.vs
 /Server/third_party/Lib
+/Server/build/bin/*.exe
+/Server/build/bin/*.ilk
+/Server/build/bin/*.pdb
+/Server/build/lib/*.lib
