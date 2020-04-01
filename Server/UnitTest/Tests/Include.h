@@ -21,4 +21,5 @@
 #include "Test_18.h"
 #include "Test_19.h"
 #include "Test_20.h"
+#include "Test_redis.h"
 #endif // Include_h__
