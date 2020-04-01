@@ -21,5 +21,9 @@
 #include "Test_18.h"
 #include "Test_19.h"
 #include "Test_20.h"
+<<<<<<< HEAD
 #include "Test_redis.h"
+=======
+#include "Test_Redis.h"
+>>>>>>> 120e486aff5b57f3f65e7969e3e1978db73d9b4c
 #endif // Include_h__

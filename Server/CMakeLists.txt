@@ -106,7 +106,6 @@ set(ProtobufInc ${PROJECT_SOURCE_DIR}/third_party/protobuf/src)
 set(SqliteInc ${PROJECT_SOURCE_DIR}/third_party/Sqlite)
 set(MessageSrc ${PROJECT_SOURCE_DIR}/Message)
 set(ServerData ${PROJECT_SOURCE_DIR}/ServerData)
-Set(GameEntitySrc ${PROJECT_SOURCE_DIR}/GameEntity)
 Set(DetourInc ${PROJECT_SOURCE_DIR}/third_party/recastnavigation/Detour/Include)
 set(RedisInc ${PROJECT_SOURCE_DIR}/third_party/hiredis)
 #设置lib目录
@@ -118,7 +117,6 @@ add_subdirectory("Message")
 add_subdirectory("UnitTest")
 add_subdirectory ("AccountServer")
 add_subdirectory ("LoginServer")
-#add_subdirectory("DBServer")
 add_subdirectory("ProxyServer")
 
 
