@@ -25,8 +25,6 @@ LINK_LIB_PLATFORM_DR(${OpenLibs} libmysql libmysqlclient "" "")
 LINK_LIB_PLATFORM_DR(${OpenLibs} sqlite3 libsqlite3 "" "")
 LINK_LIB_PLATFORM_DR(${OpenLibs} lua liblua "" "")
 LINK_LIB_PLATFORM_DR(${OpenLibs} Detour Detour "d" "")
-LINK_LIB_PLATFORM_DR(${OpenLibs} hiredis hiredis "d" "")
-LINK_LIB_PLATFORM_DR(${OpenLibs} Win32_Interop Win32_Interop "d" "")
 
 target_link_libraries(${PROJECT_NAME} ServerEngine)
 target_link_libraries(${PROJECT_NAME} Message)
