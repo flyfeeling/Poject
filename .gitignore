@@ -4,4 +4,5 @@
 /Server/build/bin/*.ilk
 /Server/build/bin/*.pdb
 /Server/build/lib/*.lib
-/Server/build/lib/*.exp
+/Server/build/bin/*.exp
+/Server/build/bin/*.lib
